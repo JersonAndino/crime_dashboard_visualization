@@ -5,5 +5,74 @@
 }
 body {
   background-color: #B2B3AE;
-  padding: 50px;
+  padding: 20px 100px 20px 100px;
+
+}
+
+.top{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.top-left {
+  width: 60%;
+  height: 920px;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.top-element{
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Map{
+  height: 100%;
+  width: 100%;
+}
+
+.CrimeNumbers {
+  height: 200px;
+  width: 100%;
+}
+
+.TopCrimeTime {
+  width: 100%;
+  height: 400px;
+}
+
+.TopCrimes {
+  height: 200px;
+  width: 100%;
+}
+
+.bottom {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bottom-element {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.CrimeDistribution {
+  height: 300px;
+  width: 100%;
+}
+
+.CrimePeak {
+  height: 300px;
+  width: 100%;
 }

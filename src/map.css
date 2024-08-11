@@ -1,0 +1,9 @@
+.Map {
+    display: flex;
+    justify-content: center;
+}
+
+.mapImage {
+    height: 100%;
+    margin: auto;
+}
