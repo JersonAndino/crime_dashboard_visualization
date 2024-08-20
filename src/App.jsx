@@ -5,6 +5,7 @@ import { TopCrimeTime } from "./TopCrimeTime";
 import { TopCrimes } from "./TopCrimes";
 import { CrimeDistribution } from "./CrimeDistribution";
 import { CrimePeak } from "./CrimePeak";
+import { CrimeDistributionAll } from "./CrimeDistributionAll";
 
 export function App(){
     return (
@@ -26,14 +27,26 @@ export function App(){
                     </div>
                 </div>
             </section>
-            <section className="bottom">
-                <div className="bottom-element">
-                    <CrimeDistribution />
-                </div>
-                <div className="bottom-element">
-                    <CrimePeak/>
-                </div>
+            <section>
+                <section className="bottom">
+                    <div className="bottom-title">
+                        <h1>DISTRIBUCION DE TOPICOS</h1>
+                    </div>
+                    <div className="bottom-left">
+                        <CrimeDistributionAll />
+                        
+                    </div>
+                    <div className="separator-bottom">                        
+                        </div>
+                    <div className="bottom-right">
+                        <CrimeDistribution />
+                    </div>                
+                </section>
+                {/* <div className="bottom-element bottom-bottom">
+                        <CrimePeak/>
+                    </div> */}
             </section>
+            
         </section>
     )
 }

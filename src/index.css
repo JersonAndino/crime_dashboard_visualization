@@ -29,7 +29,7 @@ body {
 }
 
 .top-element{
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 20px;
 }
@@ -57,22 +57,53 @@ body {
 .bottom {
   margin-top: 40px;
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.bottom-element {
-  background-color: antiquewhite;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 20px;
 }
+.bottom-title{
+  width: 100%;
+}
+.bottom-element {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 20px;
+}
+.bottom-left {
+  width: 40%;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 55%;
+}
 
 .CrimeDistribution {
-  height: 300px;
+  min-height: 300px;
   width: 100%;
 }
 
 .CrimePeak {
-  height: 300px;
+  min-height: 300px;
   width: 100%;
+}
+
+
+@media only screen and (max-width: 1055px) {
+  .bottom-left {
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
 }
